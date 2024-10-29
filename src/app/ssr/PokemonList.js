@@ -70,7 +70,7 @@ export default function PokemonList({ initialData, fetchInfo }) {
         {initialData.slice(0, visibleCount).map((item) => (
           <div
             key={item.id}
-            className="border rounded-lg p-4 shadow-md text-center hover:shadow-lg transition-shadow duration-200"
+            className="border rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-200"
           >
             <h2 className="text-xl font-semibold">{item.name.en}</h2>
             <p className="text-gray-600">{item.genera.en}</p>
@@ -80,7 +80,7 @@ export default function PokemonList({ initialData, fetchInfo }) {
             </p>
             <Link
               href={`/ssr/${item.id}`}
-              className="text-blue-500 hover:text-blue-700 inline-block mt-2"
+              className="text-blue-500 hover:text-blue-700 inline-block mt-2 text-left"
             >
               查看詳情 →
             </Link>

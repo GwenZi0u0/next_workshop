@@ -37,6 +37,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container {
-  @apply grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-sans;
+  @apply grid grid-rows-[50px_0fr_50px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20;
 }
 

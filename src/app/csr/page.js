@@ -28,7 +28,7 @@ const CSRPage = () => {
   };
 
   return (
-    <div className="container mx-auto px-2 py-8">
+    <div className="container mx-auto px-2 py-4">
       <h1 className="text-2xl font-bold text-center">
         CSR (Client Side Rendering)
       </h1>
@@ -42,7 +42,7 @@ const CSRPage = () => {
             ) => (
               <div
                 key={item.id}
-                className="border rounded-lg p-4 shadow-md text-center"
+                className="border rounded-lg p-4 shadow-md text-center h-64" 
               >
                 <h2 className="text-xl font-semibold">{item.name.en}</h2>
                 <p className="text-gray-600">{item.genera.en}</p>
