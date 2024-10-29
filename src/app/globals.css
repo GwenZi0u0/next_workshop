@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Noto Sans Traditional Chinese', sans-serif;
+  /* 自定義滾動條樣式 */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--foreground) var(--background); /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* 滾動條寬度 */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background); /* 滾動條背景 */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--foreground); /* 滾動條顏色 */
+  border-radius: 10px; /* 滾動條圓角 */
+}
+
+.container {
+  @apply grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-sans;
+}
+
