@@ -11,9 +11,6 @@ async function getData() {
   const startTime = new Date();
   const response = await fetch(
     "https://raw.githubusercontent.com/rayc2045/pokedex/main/data/PokeApi.json",
-    {
-      next: { revalidate: 3600 },
-    }
   );
 
   if (!response.ok) {
