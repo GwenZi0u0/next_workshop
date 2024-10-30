@@ -9,14 +9,14 @@ export default function Home() {
             Go to CSR Page
           </button>
         </Link>
-        <Link href="/ssr">
-          <button className="bg-blue-500 text-white font-bold py-4 px-6 rounded hover:bg-blue-600 transition duration-200">
-            Go to SSR Page
-          </button>
-        </Link>
         <Link href="/ssg">
           <button className="bg-blue-500 text-white font-bold py-4 px-6 rounded hover:bg-blue-600 transition duration-200">
             Go to SSG Page
+          </button>
+        </Link>
+        <Link href="/ssr">
+          <button className="bg-blue-500 text-white font-bold py-4 px-6 rounded hover:bg-blue-600 transition duration-200">
+            Go to SSR Page
           </button>
         </Link>
       </main>
